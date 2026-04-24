@@ -15,7 +15,7 @@ def home():
 
 @app.route("/health")
 def health():
-    filenames = next(walk('data/'), (None, None, []))[2] 
+    filenames = next(walk('data/'), (None, None, []))[2]
     return {"datafiles": filenames,
             "status": "ok"}
 
